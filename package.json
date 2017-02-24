@@ -1,0 +1,23 @@
+{
+  "name": "jest-sonar-reporter",
+  "version": "1.0.0",
+  "description": "A Sonar test reporter for Jest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": "git@github.com:3dmind/jest-sonar-reporter.git",
+  "author": "Christian Wlatschiha <c.wlatschiha@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "xml": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^18.1.1",
+    "@types/node": "^7.0.5",
+    "jest": "^19.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
