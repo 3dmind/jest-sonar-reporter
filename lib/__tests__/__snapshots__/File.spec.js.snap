@@ -1,3 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`File <file path=""></file> 1`] = `"<file path=\\"test/FooTest.js\\"></file>"`;
+
+exports[`File testCase tag 1`] = `
+"<file path=\\"test/FooTest.js\\">
+    <testCase name=\\"lorem ipsum\\" duration=\\"0\\"/>
+    <testCase name=\\"lorem ipsum\\" duration=\\"0\\"/>
+</file>"
+`;

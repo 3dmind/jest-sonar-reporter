@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestCase <testCase name="" duration=""/> 1`] = `"<testCase name=\\"lorem ipsum\\" duration=\\"0\\"/>"`;
