@@ -9,4 +9,17 @@ exports[`TestExecutions file tag 1`] = `
 </testExecutions>"
 `;
 
+exports[`TestExecutions full report 1`] = `
+"<testExecutions version=\\"1\\">
+    <file path=\\"test/FooTest.js\\">
+        <testCase name=\\"lorem ipsum\\" duration=\\"0\\"/>
+    </file>
+    <file path=\\"test/BarTest.js\\">
+        <testCase name=\\"lorem ipsum\\" duration=\\"0\\">
+            <failure message=\\"Lorem ipsum\\"/>
+        </testCase>
+    </file>
+</testExecutions>"
+`;
+
 exports[`TestExecutions root: <testExecutions version="1"> 1`] = `"<testExecutions version=\\"1\\"></testExecutions>"`;
