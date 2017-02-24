@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`File <file path=""></file> 1`] = `"<file path=\\"test/FooTest.js\\"></file>"`;

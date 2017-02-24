@@ -1,3 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`TestExecutions file tag 1`] = `
+"<testExecutions version=\\"1\\">
+    <file path=\\"test/FooTest.js\\">
+    </file>
+    <file path=\\"test/BarTest.js\\">
+    </file>
+</testExecutions>"
+`;
+
 exports[`TestExecutions root: <testExecutions version="1"> 1`] = `"<testExecutions version=\\"1\\"></testExecutions>"`;
