@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TestCase <testCase name="" duration=""/> 1`] = `"<testCase name=\\"lorem ipsum\\" duration=\\"0\\"/>"`;
+
+exports[`TestCase failing test case 1`] = `
+"<testCase name=\\"lorem ipsum\\" duration=\\"0\\">
+    <failure message=\\"Lorem ipsum\\"/>
+</testCase>"
+`;
