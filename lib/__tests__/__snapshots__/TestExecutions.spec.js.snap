@@ -12,10 +12,10 @@ exports[`TestExecutions file tag 1`] = `
 exports[`TestExecutions full report 1`] = `
 "<testExecutions version=\\"1\\">
     <file path=\\"test/FooTest.js\\">
-        <testCase name=\\"lorem ipsum\\" duration=\\"0\\"/>
+        <testCase name=\\"lorem ipsum\\" duration=\\"5\\"/>
     </file>
     <file path=\\"test/BarTest.js\\">
-        <testCase name=\\"lorem ipsum\\" duration=\\"0\\">
+        <testCase name=\\"lorem ipsum\\" duration=\\"5\\">
             <failure message=\\"Lorem ipsum\\"/>
         </testCase>
     </file>
