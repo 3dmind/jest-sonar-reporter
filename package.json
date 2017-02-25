@@ -4,7 +4,8 @@
   "description": "A Sonar test reporter for Jest.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "env-cmd test jest",
+    "test:coverage": "env-cmd test jest --coverage"
   },
   "repository": "git@github.com:3dmind/jest-sonar-reporter.git",
   "author": "Christian Wlatschiha <c.wlatschiha@gmail.com>",
@@ -15,9 +16,11 @@
   "devDependencies": {
     "@types/jest": "^18.1.1",
     "@types/node": "^7.0.5",
+    "env-cmd": "^4.0.0",
     "jest": "^19.0.2"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "testResultsProcessor": "<rootDir>/index.js"
   }
 }
