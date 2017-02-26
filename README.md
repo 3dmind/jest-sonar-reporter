@@ -1,5 +1,8 @@
 # jest-sonar-reporter
 
+[![Build Status](https://travis-ci.org/3dmind/jest-sonar-reporter.svg?branch=master)](https://travis-ci.org/3dmind/jest-sonar-reporter)
+[![Quality Gate](https://sonarqube.com/api/badges/gate?key=jest-sonar-reporter)](https://sonarqube.com/dashboard/index/jest-sonar-reporter)
+
 jest-sonar-reporter is a custom results processor for Jest.
 The processor converts Jest's output into Sonar's
 [generic test data](https://docs.sonarqube.org/display/SONAR/Generic+Test+Data) format.
