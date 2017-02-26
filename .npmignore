@@ -1,0 +1,11 @@
+.idea/
+.sonar/
+node_modules/.yarn-integrity
+coverage/
+reports/
+lib/__tests__/
+
+.env-cmdrc
+sonar-project.properties
+wallaby.js
+yarn.lock

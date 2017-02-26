@@ -7,9 +7,19 @@
     "test": "env-cmd test jest",
     "test:coverage": "env-cmd test jest --coverage"
   },
-  "repository": "git@github.com:3dmind/jest-sonar-reporter.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3dmind/jest-sonar-reporter.git"
+  },
   "author": "Christian Wlatschiha <c.wlatschiha@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3dmind/jest-sonar-reporter/issues"
+  },
+  "homepage": "https://github.com/3dmind/jest-sonar-reporter#readme",
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "dependencies": {
     "xml": "^1.0.1"
   },
