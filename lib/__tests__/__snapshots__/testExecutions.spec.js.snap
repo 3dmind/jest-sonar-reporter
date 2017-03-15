@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TestExecutions file tag 1`] = `
+exports[`testExecutions file tag 1`] = `
 "<testExecutions version=\\"1\\">
     <file path=\\"test/FooTest.js\\">
     </file>
@@ -9,7 +9,7 @@ exports[`TestExecutions file tag 1`] = `
 </testExecutions>"
 `;
 
-exports[`TestExecutions full report 1`] = `
+exports[`testExecutions full report 1`] = `
 "<testExecutions version=\\"1\\">
     <file path=\\"test/FooTest.js\\">
         <testCase name=\\"lorem ipsum\\" duration=\\"5\\"/>
@@ -22,4 +22,4 @@ exports[`TestExecutions full report 1`] = `
 </testExecutions>"
 `;
 
-exports[`TestExecutions root: <testExecutions version="1"> 1`] = `"<testExecutions version=\\"1\\"></testExecutions>"`;
+exports[`testExecutions root: <testExecutions version="1"> 1`] = `"<testExecutions version=\\"1\\"></testExecutions>"`;
