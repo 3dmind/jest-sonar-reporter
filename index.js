@@ -18,4 +18,8 @@ module.exports = (results) => {
 
   const reportFile = path.join(out, BASE)
   fs.writeFileSync(reportFile, report)
+
+  if (process.env.DEBUG) {
+    fs.writeFileSync('debug.json', JSON.stringify(results.testResults, null, 2))
+  }
 }
