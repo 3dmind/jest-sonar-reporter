@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "env-cmd test jest",
-    "test:coverage": "env-cmd test jest --coverage"
+    "test:coverage": "env-cmd test jest --coverage",
+    "test:debug": "env-cmd debug jest"
   },
   "repository": {
     "type": "git",

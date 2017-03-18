@@ -4,6 +4,6 @@ exports[`testCase <testCase name="" duration=""/> 1`] = `"<testCase name=\\"lore
 
 exports[`testCase failing test case 1`] = `
 "<testCase name=\\"lorem ipsum\\" duration=\\"0\\">
-    <failure message=\\"Lorem ipsum\\"/>
+    <failure message=\\"Lorem ipsum\\"><![CDATA[Lorem ipsum]]></failure>
 </testCase>"
 `;

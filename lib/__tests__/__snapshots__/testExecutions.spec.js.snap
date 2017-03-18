@@ -16,7 +16,7 @@ exports[`testExecutions full report 1`] = `
     </file>
     <file path=\\"test/BarTest.js\\">
         <testCase name=\\"lorem ipsum\\" duration=\\"5\\">
-            <failure message=\\"Lorem ipsum\\"/>
+            <failure message=\\"Lorem ipsum\\"><![CDATA[Lorem ipsum]]></failure>
         </testCase>
     </file>
 </testExecutions>"

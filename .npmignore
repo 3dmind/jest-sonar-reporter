@@ -4,6 +4,7 @@ node_modules/.yarn-integrity
 coverage/
 reports/
 lib/__tests__/
+test/
 
 .env-cmdrc
 sonar-project.properties
