@@ -22,4 +22,6 @@ module.exports = (results) => {
   if (process.env.DEBUG) {
     fs.writeFileSync('debug.json', JSON.stringify(results.testResults, null, 2))
   }
+
+  return results
 }
