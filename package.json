@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "env-cmd test jest",
+    "test:watch": "env-cmd test jest --watch",
     "test:coverage": "env-cmd test jest --coverage",
     "test:debug": "env-cmd debug jest"
   },
