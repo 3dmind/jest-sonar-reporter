@@ -4,6 +4,7 @@
   "description": "A Sonar test reporter for Jest.",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf reports coverage",
     "test": "env-cmd test jest",
     "test:watch": "env-cmd test jest --watch",
     "test:coverage": "env-cmd test jest --coverage",
@@ -29,7 +30,8 @@
     "@types/jest": "^18.1.1",
     "@types/node": "^7.0.5",
     "env-cmd": "^4.0.0",
-    "jest": "^19.0.2"
+    "jest": "^19.0.2",
+    "rimraf": "^2.6.1"
   },
   "jest": {
     "testEnvironment": "node",
