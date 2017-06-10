@@ -8,7 +8,9 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:debug": "env-cmd debug jest"
+    "test:debug": "env-cmd debug jest",
+    "preversion": "npm run clean && npm run test",
+    "version": "./version.sh $npm_package_version && git add sonar-project.properties"
   },
   "repository": {
     "type": "git",
