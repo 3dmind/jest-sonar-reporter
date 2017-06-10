@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf reports coverage",
-    "test": "env-cmd test jest",
-    "test:watch": "env-cmd test jest --watch",
-    "test:coverage": "env-cmd test jest --coverage",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "test:debug": "env-cmd debug jest"
   },
   "repository": {
@@ -36,5 +36,10 @@
   "jest": {
     "testEnvironment": "node",
     "testResultsProcessor": "<rootDir>/index.js"
+  },
+  "jestSonar": {
+    "reportPath": "reports",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
   }
 }
