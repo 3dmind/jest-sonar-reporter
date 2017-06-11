@@ -43,38 +43,33 @@ Configure Sonar to import the test results. Add the `sonar.testExecutionReportPa
 sonar.testExecutionReportPaths=test-report.xml
 ```
 
-The custom reporter generates the `test-report.xml` file.
-To specify a different location set the `TEST_REPORT_PATH` environment variable.
+## Customization
 
-Use `cross-env` to specify the report path in your `package.json`.
+To customize the reporter you can use `package.json` to store the configuration.
+Create a `jestSonar` entry like this:
 
 ```json
 {
-  "scripts": {
-    "test": "cross-env TEST_REPORT_PATH=reports jest"
+  "jestSonar": {}
+}
+```
+
+You can customize the following options:
+- `reportPath` This will specify the path to put the report in.
+- `reportFile` This will specify the file name of the report.
+- `indent` This will specify the indentation to format the report.
+
+```json
+{
+  "jestSonar": {
+    "reportPath": "reports",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
   }
 }
 ```
 
-Or use `env-cmd` to specify a test environment configuration.
-
-1. Add the environment variable to your `.env-cmdrc` file.
-```json
-{
-  "test": {
-    "TEST_REPORT_PATH": "reports"
-  }
-}
-```
-2. Configure a test script in your `package.json` 
-
-```json
-{
-  "scripts": {
-    "test": "env-cmd test jest"
-  }
-}
-```
+> Important: Don't forget to update `sonar.testExecutionReportPaths` when you use a custom path and file name.
 
 ## Usage
 
