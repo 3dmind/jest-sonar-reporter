@@ -5,6 +5,9 @@ addons:
   sonarqube:
     token:
       secure: "aZc5k1hlo/RyVu3Tcqzfe9UFG9s+WgfCspiCRHwuFumSrPjdIh/UO9G0YdMNMWRzzPsOzkmvqYSz+WxGFdEcpjQYh4NQ5FWeTa2OhIuvarJWobmhV98UoExavOBozfZpRqpSG7GZ1VBDhnvuMe3Ff7nveRyfmT1bc2sRTY8OYXZ/B/zy90B7cUs4/oXR6zh1c28Ct9Z2lN4rm5n2LoMbGGjvJ/PMfj/EeD5U5nwk/CvdLXiCSMytKbPHJ/h4rrHFHN9cXp8TVao75zti34d5FprQ+s3iI2f4R6FCTyD/p5zaA70eVcyxPf7WnPHoeR1JkZDRFiClMs/DdTtGoPPm38lzryzXp73paXyIV4QYtYDynAHPUexEkybdKrHw2Wb0Kv9PVmmUb+O3ooN+lUWevemwxvBtW6gvULeKGzzs0qP3AOFoT49MDGA69GYN+UERWLc1w1sxBWhIrVUlccN+tyBz8HcVsQt+NQkEc4sT+Y7l3n8Q5IhFchaf1xPHcErQuw3v0Bmh74yWnrzTTHE5tgC65VNDoPZOpDDh2MSu07hds8HC9VO+Ys95XdyTtAJAh1hdwLq5PuVk18voRg58eZWNB5TMLpXbKCOO6bxZh7094xIrbzkM9bcj0uN/hzVwl8cWlwUjgbxTVeKSb0NtXM9DxdBx9zmoWg4JZ4zOTiw="
+    branches:
+      - master
+      - develop
 
 language: node_js
 node_js:
