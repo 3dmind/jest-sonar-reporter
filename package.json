@@ -1,6 +1,6 @@
 {
   "name": "jest-sonar-reporter",
-  "version": "1.2.0-3",
+  "version": "1.2.0-4",
   "description": "A Sonar test reporter for Jest.",
   "main": "index.js",
   "scripts": {
