@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getConfig should default to empty config 1`] = `Object {}`;
+
+exports[`getConfig should retrieve config from JSON object 1`] = `
+Object {
+  "reportPath": "reports",
+}
+`;

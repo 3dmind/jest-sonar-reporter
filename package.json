@@ -1,13 +1,16 @@
 {
   "name": "jest-sonar-reporter",
-  "version": "1.1.1",
+  "version": "1.2.0-4",
   "description": "A Sonar test reporter for Jest.",
   "main": "index.js",
   "scripts": {
-    "test": "env-cmd test jest",
-    "test:watch": "env-cmd test jest --watch",
-    "test:coverage": "env-cmd test jest --coverage",
-    "test:debug": "env-cmd debug jest"
+    "clean": "rimraf reports coverage",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:debug": "env-cmd debug jest",
+    "preversion": "npm run clean && npm run test",
+    "version": "./version.sh $npm_package_version && git add sonar-project.properties"
   },
   "repository": {
     "type": "git",
@@ -29,10 +32,16 @@
     "@types/jest": "^18.1.1",
     "@types/node": "^7.0.5",
     "env-cmd": "^4.0.0",
-    "jest": "^19.0.2"
+    "jest": "^20.0.4",
+    "rimraf": "^2.6.1"
   },
   "jest": {
     "testEnvironment": "node",
     "testResultsProcessor": "<rootDir>/index.js"
+  },
+  "jestSonar": {
+    "reportPath": "reports",
+    "reportFile": "test-report.xml",
+    "indent": 4
   }
 }
