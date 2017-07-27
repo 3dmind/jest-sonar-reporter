@@ -37,9 +37,9 @@ Configure Jest in your `package.json` to use `jest-sonar-reporter` as a custom r
 ```
 
 Configure Sonar to import the test results. Add the `sonar.testExecutionReportPaths` property to your
-`sonar-project.properties` file. 
+`sonar-project.properties` file.
 
-```properites
+```properties
 sonar.testExecutionReportPaths=test-report.xml
 ```
 
@@ -73,6 +73,27 @@ You can customize the following options:
 ```
 
 > Important: Don't forget to update `sonar.testExecutionReportPaths` when you use a custom path and file name.
+
+## Support for Sonarqube 5.6.x
+
+Sonarqube 5.6.x does not support [Generic Test Data](https://docs.sonarqube.org/display/SONAR/Generic+Test+Data) however it has a [Generic Test Coverage plugin](https://docs.sonarqube.org/display/PLUG/Generic+Test+Coverage) which offers similar functionality.
+
+If you have the plugin installed on Sonarqube, you can configure this reporter to produce files in supported format.
+
+```json
+{
+  "jestSonar": {
+    "sonar56x": true
+  }
+}
+```
+
+Configure Sonar to import the test results. Add the `sonar.genericcoverage.unitTestReportPaths` property to your
+`sonar-project.properties` file.
+
+```properties
+sonar.genericcoverage.unitTestReportPaths=test-report.xml
+```
 
 ## Usage
 
