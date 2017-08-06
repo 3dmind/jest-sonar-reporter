@@ -2,7 +2,7 @@ dist: trusty
 sudo: required
 
 addons:
-  sonarqube:
+  sonarcloud:
     organization: "3dmind-github"
     token:
       secure: "WJhxyCi9k7wAQOKJWAER6JGgzdx2vdadFbMNccNGz16Hn4ZHe3o1zsN3Vs+6pYKxhob4hqG3YTycpDXQUpthY01suQaiNlg7XiTPJ9tZaHii/IyMrbZ0QVYBWkUjubGuSF8mDQ/mC1pZp0HJzWE9Ux6XnhEM290MupCMuNeKEWhXuhi11/pToMBCpUuBM4o2RhDQQILu/FWy+OknA6V75APHyvLDTJowVhCUlYX+PMv3HkCKCuAqNeDhEQyRMIAYSDdebfIInq+pXoAYlUga3NidPwrGoTpT5UOCr5KrZ/QiPnUap1uSpsggwxJ6KYU3wvbCkajsfLMMawlFeqpYn2BR/BmzqMTpQymSzSFgVoL/Qi9hjeJe0mJ0UoUibiqjp9reVFovy6r72M/HPGx+rdfigNqMEhtiQQt94MbAlFVsG1KLUdHQQ5aHRZzHypMYXOm8rqqhPYqRE76QhgAqRIWPUMAXlJ8/LckbsP7nTJWKIRap4CFTsEzO84n6Yjl+ZrXkq5cus0rYCw4khGX/JEKj83UsVnld0SL7JgZNRVlOGfrj4lKBOgFXHXXscATbnEAflxDmFaitPpJ+7ab2xXyf1mKCx5TJSedoyee2/fLHTfUEvUX8VQ3nL1iyqDKSZeDRWeLbfRGERzbkQ1hjhxVW/gZxF14nJ6aQBfJ5Xfs="
