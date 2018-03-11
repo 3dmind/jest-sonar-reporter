@@ -8,7 +8,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:debug": "env-cmd debug jest",
+    "test:debug": "DEBUG=true jest",
     "preversion": "npm run clean && npm run test",
     "version": "./version.sh $npm_package_version && git add sonar-project.properties"
   },
@@ -29,11 +29,10 @@
     "xml": "^1.0.1"
   },
   "devDependencies": {
-    "@types/jest": "^18.1.1",
-    "@types/node": "^7.0.5",
-    "env-cmd": "^4.0.0",
-    "jest": "^20.0.4",
-    "rimraf": "^2.6.1"
+    "@types/jest": "^22.2.0",
+    "@types/node": "^9.4.7",
+    "jest": "^22.4.2",
+    "rimraf": "^2.6.2"
   },
   "jest": {
     "testEnvironment": "node",
