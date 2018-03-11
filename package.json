@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/3dmind/jest-sonar-reporter#readme",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=8.0.0"
   },
   "dependencies": {
     "xml": "^1.0.1"
