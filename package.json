@@ -9,7 +9,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:debug": "DEBUG=true jest",
-    "preversion": "npm run clean && npm run test",
+    "preversion": "npm run clean && npm run test:coverage",
     "version": "./version.sh $npm_package_version && git add sonar-project.properties"
   },
   "repository": {
