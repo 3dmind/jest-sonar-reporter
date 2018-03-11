@@ -47,8 +47,6 @@ sonar.testExecutionReportPaths=test-report.xml
 
 To customize the reporter you can use `package.json` to store the configuration.
 
-> Important: The `TEST_REPORT_PATH` environment variable is deprecated!
-
 Create a `jestSonar` entry like this:
 
 ```json
