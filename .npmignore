@@ -10,3 +10,4 @@ test/
 sonar-project.properties
 wallaby.js
 yarn.lock
+*.log
