@@ -4,7 +4,7 @@
   "description": "A Sonar test reporter for Jest.",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf reports coverage",
+    "clean": "rimraf reports* coverage",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
