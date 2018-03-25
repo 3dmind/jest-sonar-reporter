@@ -7,9 +7,6 @@ jest-sonar-reporter is a custom results processor for Jest.
 The processor converts Jest's output into Sonar's
 [generic test data](https://docs.sonarqube.org/display/SONAR/Generic+Test+Data) format.
 
-This project is inspired by Michael Allen's [jest-junit-reporter](https://github.com/michaelleeallen/jest-junit-reporter)
-project.
-
 ## Installation
 
 Using npm:
@@ -72,7 +69,7 @@ You can customize the following options:
 
 > Important: Don't forget to update `sonar.testExecutionReportPaths` when you use a custom path and file name.
 
-## Support for Sonarqube 5.6.x
+### Support for Sonarqube 5.6.x
 
 Sonarqube 5.6.x does not support [Generic Test Data](https://docs.sonarqube.org/display/SONAR/Generic+Test+Data) however it has a [Generic Test Coverage plugin](https://docs.sonarqube.org/display/PLUG/Generic+Test+Coverage) which offers similar functionality.
 
@@ -92,6 +89,32 @@ Configure Sonar to import the test results. Add the `sonar.genericcoverage.unitT
 ```properties
 sonar.genericcoverage.unitTestReportPaths=test-report.xml
 ```
+
+### Support for different configuration environments
+
+To support different environments add the `env` property to the configuration and overwrite the value of the option you want to modify for the specific environment.
+You can overwrite the following configuration options: `reportPath`, `reportFile`, `indent`, `sonar56x`
+
+For example: Overwrite the path were the report will be stored.
+```json
+{
+  "jestSonar": {
+    "reportPath": "reports",
+    "reportFile": "test-reporter.xml",
+    "indent": 4,
+    "env": {
+      "test": {
+        "reportPath": "reports-test"
+      }
+    }
+  }
+}
+``` 
+
+Use the `NODE_ENV` variable to activate the environment specific configuration.
+```shell
+NODE_ENV=test npm run test
+``` 
 
 ## Usage
 

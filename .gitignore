@@ -6,3 +6,4 @@ reports/
 test/
 debug.json
 *.log
+test-report.xml

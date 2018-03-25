@@ -4,6 +4,8 @@ exports[`getConfig should default to empty config 1`] = `Object {}`;
 
 exports[`getConfig should retrieve config from JSON object 1`] = `
 Object {
+  "indent": 4,
+  "reportFile": "test-report.xml",
   "reportPath": "reports",
 }
 `;
