@@ -1,13 +1,15 @@
+.github/
 .idea/
 .sonar/
 node_modules/.yarn-integrity
 coverage/
 reports/
-lib/__tests__/
+__tests__
 test/
 
-.env-cmdrc
+.travis.yml
 sonar-project.properties
+version.sh
 wallaby.js
 yarn.lock
 *.log
