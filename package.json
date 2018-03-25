@@ -2,6 +2,13 @@
   "name": "jest-sonar-reporter",
   "version": "2.0.0-4",
   "description": "A Sonar test reporter for Jest.",
+  "keywords": [
+    "sonar",
+    "sonarqube",
+    "jest",
+    "results",
+    "processor"
+  ],
   "main": "index.js",
   "scripts": {
     "clean": "rimraf reports* coverage",
