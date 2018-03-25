@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getDefaultConfig should retrieve default configuration 1`] = `
+Object {
+  "indent": 2,
+  "reportFile": "test-report.xml",
+  "reportPath": "/",
+  "sonar56x": false,
+}
+`;

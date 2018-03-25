@@ -4,4 +4,6 @@ node_modules/
 coverage/
 reports/
 test/
-/debug.json
+debug.json
+*.log
+test-report.xml

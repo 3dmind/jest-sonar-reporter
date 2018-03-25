@@ -1,15 +1,22 @@
 {
   "name": "jest-sonar-reporter",
-  "version": "1.3.0",
+  "version": "2.0.0-5",
   "description": "A Sonar test reporter for Jest.",
+  "keywords": [
+    "sonar",
+    "sonarqube",
+    "jest",
+    "results",
+    "processor"
+  ],
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf reports coverage",
+    "clean": "rimraf reports* coverage",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:debug": "env-cmd debug jest",
-    "preversion": "npm run clean && npm run test",
+    "test:debug": "DEBUG=true jest",
+    "preversion": "npm run clean && npm run test:coverage",
     "version": "./version.sh $npm_package_version && git add sonar-project.properties"
   },
   "repository": {
@@ -23,17 +30,16 @@
   },
   "homepage": "https://github.com/3dmind/jest-sonar-reporter#readme",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=8.0.0"
   },
   "dependencies": {
     "xml": "^1.0.1"
   },
   "devDependencies": {
-    "@types/jest": "^18.1.1",
-    "@types/node": "^7.0.5",
-    "env-cmd": "^4.0.0",
-    "jest": "^20.0.4",
-    "rimraf": "^2.6.1"
+    "@types/jest": "^22.2.0",
+    "@types/node": "^9.4.7",
+    "jest": "^22.4.2",
+    "rimraf": "^2.6.2"
   },
   "jest": {
     "testEnvironment": "node",
