@@ -6,5 +6,6 @@ Object {
   "reportFile": "test-report.xml",
   "reportPath": "/",
   "sonar56x": false,
+  "useRelativePath": false,
 }
 `;

@@ -2,6 +2,8 @@
 
 exports[`file <file path=""></file> 1`] = `"<file path=\\"test/FooTest.js\\"></file>"`;
 
+exports[`file path value is relative 1`] = `"<file path=\\"test/RelativePathTest.js\\"></file>"`;
+
 exports[`file testCase tag 1`] = `
 "<file path=\\"test/FooTest.js\\">
     <testCase name=\\"lorem ipsum\\" duration=\\"0\\"/>

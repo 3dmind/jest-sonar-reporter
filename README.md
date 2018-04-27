@@ -53,16 +53,18 @@ Create a `jestSonar` entry like this:
 ```
 
 You can customize the following options:
-- `reportPath` This will specify the path to put the report in.
-- `reportFile` This will specify the file name of the report.
-- `indent` This will specify the indentation to format the report.
+- `reportPath` (default: `root`, type: `string`) - This will specify the path to put the report in.
+- `reportFile` (default: `'test-report.xml'`, type: `string`) - This will specify the file name of the report.
+- `indent` (default: `2`, type: `number`) - This will specify the indentation to format the report.
+- `useRelativePath` (default: `false`, type: `boolean`) - This will create relative path for file element in report.
 
 ```json
 {
   "jestSonar": {
     "reportPath": "reports",
     "reportFile": "test-reporter.xml",
-    "indent": 4
+    "indent": 4,
+    "useRelativePath": false
   }
 }
 ```
@@ -109,12 +111,12 @@ For example: Overwrite the path were the report will be stored.
     }
   }
 }
-``` 
+```
 
 Use the `NODE_ENV` variable to activate the environment specific configuration.
 ```shell
 NODE_ENV=test npm run test
-``` 
+```
 
 ## Usage
 
