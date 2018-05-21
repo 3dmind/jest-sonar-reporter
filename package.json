@@ -33,6 +33,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
+    "read-pkg-up": "^3.0.0",
     "xml": "^1.0.1"
   },
   "devDependencies": {
