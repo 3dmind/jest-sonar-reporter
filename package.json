@@ -33,21 +33,27 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "xml": "^1.0.1"
+    "xml": "^1.0.1",
+    "jest-validate": "^24.5.0"
   },
   "devDependencies": {
-    "@types/jest": "^22.2.0",
+    "@types/jest": "^24.0.11",
     "@types/node": "^9.4.7",
-    "jest": "^22.4.2",
-    "rimraf": "^2.6.2"
+    "jest": "^24.5.0",
+    "rimraf": "^2.6.3"
   },
   "jest": {
     "testEnvironment": "node",
-    "testResultsProcessor": "<rootDir>/index.js"
+    "reporters": [
+      "default",
+      ["<rootDir>/index.js", {
+        "reportPath": "reports",
+        "indent": 4
+      }]
+    ]
   },
   "jestSonar": {
-    "reportPath": "reports",
-    "reportFile": "test-report.xml",
-    "indent": 4
+    "reportPath": "ignored",
+    "reportFile": "test-report.xml"
   }
 }
