@@ -90,6 +90,24 @@ Configure Sonar to import the test results. Add the `sonar.genericcoverage.unitT
 sonar.genericcoverage.unitTestReportPaths=test-report.xml
 ```
 
+### Support for multiple jest configurations
+If you have more than one jest configuration and need to allow different jest sonar report options for each configuration.
+you can overwrite the defaults by setting the following parameters in each jest configuration.
+
+```js
+const jestCommon = require('./jest.common.config');
+
+module.exports = {
+    ...jestCommon,
+    testEnvironmentOptions: {
+        sonarReporter: {
+            "reportFile": "e2e.xml",
+            "reportPath": "test-reports",
+        }
+    }
+};
+```
+
 ### Support for different configuration environments
 
 To support different environments add the `env` property to the configuration and overwrite the value of the option you want to modify for the specific environment.
