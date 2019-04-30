@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = (wallaby) => {
   return {
@@ -24,4 +24,4 @@ module.exports = (wallaby) => {
       wallaby.testFramework.configure(require('./package.json').jest)
     }
   }
-}
+};

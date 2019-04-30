@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
-const reporter = require('./lib/reporter')
-module.exports = reporter
+const reporter = require('./lib/reporter');
+module.exports = reporter;
