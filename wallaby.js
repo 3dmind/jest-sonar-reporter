@@ -21,7 +21,7 @@ module.exports = (wallaby) => {
       '**/*.js': wallaby.compilers.babel()
     },
     setup: function (wallaby) {
-      wallaby.testFramework.configure(require('./package.json').jest)
+      wallaby.testFramework.configure(require('./package.json').jest);
     }
-  }
+  };
 };
